@@ -1,0 +1,134 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #34495e; /* Dark Blue */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #2c3e50; /* Darker Blue */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #e67e22; /* Orange */
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+    background: #e67e22; /* Orange */
+}
+
+.hero {
+    background: url('/image/hero.png') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #3498db; /* Blue */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.hero button {
+    padding: 1em 2em;
+    background-color: #e67e22; /* Orange */
+    color: #fff;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #c0392b; /* Darker Orange */
+}
+
+section.main {
+    float: left;
+    width: 70%;
+    padding: 2em;
+}
+
+section h2 {
+    color: #333;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+aside.sidebar {
+    float: left;
+    width: 30%;
+    background: #ecf0f1; /* Light Gray */
+    padding: 1em;
+}
+
+.sidebar h2 {
+    color: #333;
+}
+
+.class-card {
+    border: 1px solid #bdc3c7; /* Lighter Gray */
+    margin-bottom: 1em;
+    padding: 1em;
+    background: #fff;
+}
+
+footer {
+    background-color: #2c3e50; /* Darker Blue */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
